@@ -12,3 +12,8 @@ Route::get('login', function () {
 Route::get('register', function () {
     return view('registro');
 });
+Route::get('domiciliario', function () {
+    return view('domiciliario');
+});
+
+?>
