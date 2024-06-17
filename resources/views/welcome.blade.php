@@ -1,86 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-        .full-height {
-            height: 100vh;
-        }
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-        .position-ref {
-            position: relative;
-        }
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-        .content {
-            text-align: center;
-        }
-        .title {
-            font-size: 84px;
-        }
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Página principal de Barriosoft, tienda en línea de productos variados." />
+    <meta name="author" content="Barriosoft" />
+    <title>Página inicio - Barriosoft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/css/inicio.css" rel="stylesheet" />
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
+    <header>
+        <div class="logo">
+            <img src="/img/logo.jpg" alt="Logo Barriosoft" style="width: 60px; height: auto; border-radius: 60%; margin-right: 20px">
+            <span class="nav-item">Barriosoft</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="interfaz_tienda.html">Tienda</a>
+                    <div class="dropdown-content">
+                        <a href="interfaz_productos_vendidos.html">Productos más vendidos</a>
+                        <a href="interfaz_nuevos_productos.html">Nuevos productos</a>
+                        <a href="interfaz_productos.html">Todos los productos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="interfaz_categorias.html">Categorías</a>
+                    <div class="dropdown-content">
+                        <a href="abarrotes.html">Abarrotes</a>
+                        <a href="granos.html">Granos</a>
+                        <a href="frutas.html">Frutas</a>
+                        <a href="verduras.html">Verduras</a>
+                        <a href="productos.html">Productos de Aseo</a>
+                    </div>
+                </li>
+                <li><a href='sobre_nosotros'>Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="Cuenta-lado">
+            <a href='login'>
+                <button class="estilo-boton" style="margin-left: 550px">Iniciar Sesión</button>
+            </a>
+        </div>
+        <span style="margin: 0 10px;"></span>
+        <div class="Cuenta-lado">
+            <a href='register'>
+                <button class="estilo-boton" style="margin-right: 9px">Regístrese</button>
+            </a>
+        </div>
+    </header>
 
-        <div class="content">
-            <div class="title m-b-md">
-                Laravel
-            </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="/img/Supermercado3.jpg" alt="Supermercado">
+            <img src="/img/Supermercado2.jpg" alt="Supermercado">
+            <img src="/img/Supermercado4.jpg" alt="Supermercado">
+            <img src="/img/Supermercado5.jpg" alt="Supermercado">
+        </div>
+    </div><br>
 
-            <div class="links">
-                <a href="https://laravel.com/docs">Docs</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://blog.laravel.com">Blog</a>
-                <a href="https://nova.laravel.com">Nova</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://vapor.laravel.com">Vapor</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
+    <div class="container">
+        <h1>Algunos productos</h1>
+    </div>
+
+    <section class="Contenido">
+        <div class="product-box">
+            <img src="/img/Libra de arroz diana.jpg" alt="Libra de arroz - Diana">
+            <div class="details">
+                <h5>Libra de arroz - Diana</h5>
+                <span>2.500$</span>
+                <a href="#">Ver detalles</a>
             </div>
         </div>
-    </div>
+        <div class="product-box">
+            <img src="/img/leche deslactosada.jpg" alt="Paquete x12 bolsa leche - Alquería">
+            <div class="details">
+                <h5>Paquete x12 bolsa leche - Alquería</h5>
+                <span>37.500$</span>
+                <a href="#">Ver detalles</a>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="/img/zucaritas.jpg" alt="Caja cereal - Zucaritas">
+            <div class="details">
+                <h5>Caja cereal - Zucaritas</h5>
+                <span>12.500$</span>
+                <a href="#">Ver detalles</a>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="/img/papas.jpg" alt="Papas fritas margarita">
+            <div class="details">
+                <h5>Papas fritas margarita</h5>
+                <span>2.000$</span>
+                <a href="#">Ver detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <ul class="redes-sociales-lista">
+            <li><a href="#"><img style="width: 60px; height: auto; border-radius: 60%; margin-right: 20px" src="/img/icono fc.jpg" alt="Facebook"></a></li>
+            <li><a href="#"><img style="width: 60px; height: auto; border-radius: 60%; margin-right: 20px" src="/img/logo ig.jpg" alt="Instagram"></a></li>
+        </ul>
+        <div class="redes-sociales-inferior">
+            <p>&copy; Barriosoft 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
