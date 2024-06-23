@@ -6,7 +6,7 @@
     <link rel="icon" href="/img/logo.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
     
-    <title>Error 404</title>
+    <title>Error 500</title>
     <style>
         * {
             margin: 0;
@@ -23,7 +23,7 @@
             align-items: center; 
         }
 
-        .container-404 {
+        .container-500 {
         
             text-align: center;
             max-width: 600px;
@@ -47,9 +47,9 @@
     </style>
 </head>
 <body>
-    <div class="container-404">
-        <h1>Error 404</h1>
-        <p>Esta página no se encuentra disponible en estos momentos.</p>
+    <div class="container-500">
+        <h1>Error 500</h1>
+        <p>Internal Server Error.</p>
         <p>Inténtelo nuevamente, gracias.</p>
         <a href="/" class="boton">Página Principal</a>     
     </div>

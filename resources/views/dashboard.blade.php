@@ -16,6 +16,7 @@
         <div class="logo">
             <img src="/img/logo.jpg" alt="Logo Barriosoft" style="width: 60px; height: auto; border-radius: 60%; margin-right: 20px">
             <span class="nav-item">Barriosoft</span>
+            <li><a href="sssss">Admin</a></li>
         </div>
         <nav>
             <ul>
@@ -37,8 +38,12 @@
                         <a href="productos.html">Productos de Aseo</a>
                     </div>
                 </li>
-                <li><a href='sobre_nosotros'>Sobre Nosotros</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li> <!-- Nuevo enlace -->
+                <li><a href="faq.html">FAQ</a></li> <!-- Nuevo enlace -->
             </ul>
+        </nav>
+            
         </nav>
         <span style="margin: 0 250px;"></span>
         <form>
@@ -53,7 +58,7 @@
             <i class="bi bi-person me-1"></i>&nbsp; {{ Auth::user()->name }}
             </a>
             <div class="dropdown-content">
-                <a href="mi_cuenta.php">Mi cuenta</a>
+                <a href="{{route('profile')}}">Mi cuenta</a>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">
